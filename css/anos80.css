@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #F5E7FF, #E0F7FA); /* Roxo pastel para azul claro pastel */
+    color: #555; /* Cinza suave */
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: #4c2a77; /* Roxo escuro original */
+    --cor2: #FFF8DC; /* Bege claro pastel */
+    --cor3: #B0E0E6; /* Azul pastel */
+    --cor4: #FFFFFF; /* Branco */
+    --cor5: #ff69b4; /* Rosa pastel */
+    --cor6: #2b0936; /* Roxo profundo original */
+    --cor7: #A9A9A9; /* Cinza médio */
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1em 3em;
+    background-color: var(--cor1); /* Roxo escuro original */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo h1 {
+    font-family: 'Lobster', cursive;
+    color: var(--cor5);
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 2; /* Garantir que o logo fique acima dos links */
+}
+
+/* Links de navegação */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links a {
+    color: var(--cor4);
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+.navbar img {
+    width: 70px;  /* Ajuste o valor conforme necessário */
+    height: auto;  /* Mantém a proporção original da imagem */
+}
+.nav-links a:hover {
+    color: var(--cor3); /* Azul pastel */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.hero {
+    text-align: center;
+    padding: 2em;
+    background-color: var(--cor2); /* Bege claro pastel */
+    border-radius: 10px;
+    border: 2px solid var(--cor5); /* Rosa pastel */
+    margin-bottom: 2em;
+}
+
+.hero h1 {
+    color: var(--cor5);
+    text-shadow: 2px 2px 8px var(--cor5);
+}
+
+.topic {
+    margin-bottom: 3em;
+    border: 2px solid var(--cor5);
+    border-radius: 10px;
+    background-color: var(--cor2); /* Bege claro pastel */
+    padding: 1.5em;
+}
+
+.topic h2 {
+    color: var(--cor5);
+    text-shadow: 2px 2px 8px var(--cor5);
+    margin-bottom: 1em;
+}
+
+.topic-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.topic p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.topic-video {
+    width: 100%;
+    border-radius: 10px;
+}
+#banners {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 3em;;
+}
+
+#banners ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#banners ul li {
+    display: inline-block;
+    width: 100%;
+    height: 550px; /* Defina a mesma altura para o item */
+}
+
+#banners ul li img {
+    width: 100%;
+    height: auto;
+}
+#banners .bxslider li img {
+    width: 100%; /* A largura vai se ajustar à largura do contêiner */
+    height: 700px; /* Defina a altura fixa que você deseja para todas as imagens */
+    object-fit: cover; /* Isso fará com que a imagem cubra o espaço sem distorcer */
+}
+footer {
+    background: linear-gradient(180deg, var(--cor6), #000000); /* Roxo profundo original para preto */
+    color: var(--cor4);
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 3em;
+}
+
+footer .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-bottom: 1em;
+}
+
+footer .footer-links a {
+    color: var(--cor4);
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+footer .footer-links a:hover {
+    color: var(--cor5);
+}
+
+footer p {
+    font-size: 0.9em;
+    color: var(--cor7);
+}
