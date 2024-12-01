@@ -1,10 +1,10 @@
 $(document).ready(function() {
     $('#galeria').magnificPopup({
-        delegate: 'a', // Seleciona os links dentro do contêiner #galeria
+        delegate: 'a', 
         type: 'image',
         gallery: {
-            enabled: true // Ativa a navegação entre imagens
+            enabled: true 
         },
-        closeBtnInside: true // O botão "X" para fechar ficará dentro do popup
+        closeBtnInside: true 
     });
 });

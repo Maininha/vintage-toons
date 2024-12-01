@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #E8D5F1, #A1F0C7); /* Lavanda para menta suave */
-    color: #555; /* Cinza suave */
+    font-family: 'Cinzel', serif;
+    background: linear-gradient(180deg, #E8D5F1, #A1F0C7); 
+    color: #555; 
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --cor1: #4c2a77; /* Roxo moderado dos anos 90 */
-    --cor2: #FFDAB9; /* Pêssego suave */
-    --cor3: #A1F0C7; /* Menta suave */
-    --cor4: #FFFFFF; /* Branco */
-    --cor5: #ff69b4; /* Rosa suave */
-    --cor6: #2b0936; /* Roxo profundo original */
-    --cor7: #A9A9A9; /* Cinza médio */
+    --cor1: #4c2a77;
+    --cor2: #FFDAB9; 
+    --cor3: #A1F0C7; 
+    --cor4: #FFFFFF; 
+    --cor5: #ff69b4;
+    --cor6: #2b0936; 
+    --cor7: #A9A9A9; 
 }
 
 .navbar {
@@ -22,24 +23,22 @@ body {
     justify-content:space-around;
     align-items: center;
     padding: 1em 3em;
-    background-color: var(--cor1); /* Roxo moderado dos anos 90 */
+    background-color: var(--cor1); 
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
 }
 
-/* Logo */
 .logo h1 {
     font-family: 'Lobster', cursive;
     color: var(--cor5);
     font-size: 1.8em;
     font-weight: bold;
     text-decoration: none;
-    z-index: 2; /* Garantir que o logo fique acima dos links */
+    z-index: 2; 
 }
 
-/* Links de navegação */
 .nav-links {
     list-style: none;
     display: flex;
@@ -54,11 +53,11 @@ body {
 }
 
 .nav-links a:hover {
-    color: var(--cor3); /* Menta suave */
+    color: var(--cor3); 
 }
 .navbar img {
-    width: 70px;  /* Ajuste o valor conforme necessário */
-    height: auto;  /* Mantém a proporção original da imagem */
+    width: 70px;  
+    height: auto;  
 }
 .container {
     max-width: 1200px;
@@ -69,9 +68,9 @@ body {
 .hero {
     text-align: center;
     padding: 2em;
-    background-color: var(--cor2); /* Pêssego suave */
+    background-color: var(--cor2); 
     border-radius: 10px;
-    border: 2px solid var(--cor5); /* Rosa suave */
+    border: 2px solid var(--cor5); 
     margin-bottom: 2em;
 }
 
@@ -84,14 +83,13 @@ body {
     margin-bottom: 3em;
     border: 2px solid var(--cor5);
     border-radius: 10px;
-    background-color: var(--cor2); /* Pêssego suave */
-    padding: 1.5em;
+    background-color: var(--cor2); 
+    padding: 1.5em 1.5em 1.5em 2em; 
 }
-
 .topic h2 {
     color: var(--cor5);
     text-shadow: 2px 2px 8px var(--cor5);
-    margin-bottom: 1em;
+    margin: 1.5em 1.5em 1.5em 2em; 
 }
 
 .topic-image {
@@ -105,13 +103,35 @@ body {
     line-height: 1.6;
     text-align: justify;
     margin-bottom: 1em;
+    margin-left: -2em;
 }
-
 .topic-video {
     width: 100%;
     border-radius: 10px;
 }
+.topic .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 150px; 
+    margin-right: 50px;
+    
+}
 
+.topic .container p {
+    flex: 1; 
+    margin: 0;
+}
+
+.topic #videos {
+    flex: 1; 
+}
+
+.topic iframe {
+    width: 100%;
+    height: 250px;
+    max-width: 500px; 
+}
 #banners {
     width: 100%;
     overflow: hidden;
@@ -127,7 +147,7 @@ body {
 #banners ul li {
     display: inline-block;
     width: 100%;
-    height: 550px; /* Defina a mesma altura para o item */
+    height: 550px; 
 }
 
 #banners ul li img {
@@ -135,13 +155,13 @@ body {
     height: auto;
 }
 #banners .bxslider li img {
-    width: 100%; /* A largura vai se ajustar à largura do contêiner */
-    height: 700px; /* Defina a altura fixa que você deseja para todas as imagens */
-    object-fit: cover; /* Isso fará com que a imagem cubra o espaço sem distorcer */
+    width: 100%; 
+    height: 700px; 
+    object-fit: cover; 
 }
 
 footer {
-    background: linear-gradient(180deg, var(--cor6), #000000); /* Roxo profundo original para preto */
+    background: linear-gradient(180deg, var(--cor6), #000000); 
     color: var(--cor4);
     padding: 2em;
     text-align: center;

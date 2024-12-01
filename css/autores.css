@@ -1,99 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #FDE8D0, #D4F2E7); /* Pêssego pastel para verde-água pastel */
-    color: #555; /* Cinza suave */
+    font-family: 'Cinzel', serif;
+    background: linear-gradient(180deg, #FDE8D0, #D4F2E7); 
+    color: #555; 
     margin: 0;
     padding: 0;
 }
-
 :root {
-    --cor1: #4c2a77; /* Roxo moderado dos anos 90 (mantém o topo original) */
-    --cor2: #FFE4E1; /* Rosa pastel (fundo de destaque) */
-    --cor3: #D4F2E7; /* Verde-água pastel (links ao passar o mouse) */
-    --cor4: #FFFFFF; /* Branco */
-    --cor5: #ff69b4; /* Rosa suave pastel */
-    --cor6: #2b0936; /* Roxo profundo original (mantém o footer original) */
-    --cor7: #A9A9A9; /* Cinza médio */
+    --cor1: #4c2a77; 
+    --cor2: #FFE4E1; 
+    --cor3: #D4F2E7; 
+    --cor4: #FFFFFF; 
+    --cor5: #ff69b4; 
+    --cor6: #2b0936; 
+    --cor7: #A9A9A9; 
 }
-
 .navbar {
     display: flex;
     justify-content:space-around;
     align-items: center;
     padding: 1em 3em;
-    background-color: var(--cor1); /* Roxo moderado dos anos 90 */
+    background-color: var(--cor1); 
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
 }
-
 .logo h1 {
     font-family: 'Lobster', cursive;
     color: var(--cor5);
     font-size: 1.8em;
     font-weight: bold;
     text-decoration: none;
-    z-index: 2; /* Garantir que o logo fique acima dos links */
+    z-index: 2; 
 }
-
-
-/* Links de navegação */
 .nav-links {
     list-style: none;
     display: flex;
     gap: 1.5em;
 }
-
 .nav-links a {
     color: var(--cor4);
     text-decoration: none;
     font-size: 1em;
     transition: color 0.3s;
 }
-
 .nav-links a:hover {
-    color: var(--cor3); /* Verde-água pastel */
+    color: var(--cor3); 
 }
 .navbar img {
-    width: 70px;  /* Ajuste o valor conforme necessário */
-    height: auto;  /* Mantém a proporção original da imagem */
+    width: 70px;  
+    height: auto;  
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2em;
 }
-
 .hero {
     text-align: center;
     padding: 2em;
-    background-color: var(--cor2); /* Rosa pastel */
+    background-color: var(--cor2); 
     border-radius: 10px;
-    border: 2px solid var(--cor5); /* Rosa suave pastel */
+    border: 2px solid var(--cor5); 
     margin-bottom: 2em;
 }
-
 .hero h1 {
     color: var(--cor5);
     text-shadow: 2px 2px 8px var(--cor5);
 }
-
 .topic {
     margin-bottom: 3em;
     border: 2px solid var(--cor5);
     border-radius: 10px;
-    background-color: var(--cor2); /* Rosa pastel */
+    background-color: var(--cor2); 
     padding: 1.5em;
 }
-
 .topic h2 {
     color: var(--cor5);
     text-shadow: 2px 2px 8px var(--cor5);
     margin-bottom: 1em;
 }
-
 .topic-image {
     width: 100%;
     border-radius: 10px;
@@ -106,38 +94,35 @@ body {
     text-align: justify;
     margin-bottom: 1em;
 }
-
 .topic-video {
     width: 100%;
     border-radius: 10px;
 }
-
 #autores #galeria {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centraliza os cards */
+    justify-content: center; 
     gap: 30px;
     margin-bottom: 50px;
+    margin-top: 50px; 
 }
-
 #autores .autor {
     background-color: var(--cor2);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease;
-    width: 250px; /* Define uma largura fixa para os cards */
+    width: 250px; 
 }
-
 #autores .autor img {
     width: 100%;
-    height: 300px; /* Define uma altura fixa para todas as imagens */
-    object-fit: cover; /* Faz as imagens ocuparem todo o espaço sem distorcer */
+    height: 300px; 
+    object-fit: cover; 
     border-radius: 10px;
     margin-bottom: 10px;
 }
 footer {
-    background: linear-gradient(180deg, var(--cor6), #000000); /* Roxo profundo original para preto */
+    background: linear-gradient(180deg, var(--cor6), #000000); 
     color: var(--cor4);
     padding: 2em;
     text-align: center;

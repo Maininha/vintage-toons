@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #2b0936, #000000); /* Degradê de roxo escuro para preto */
+    font-family: 'Cinzel', serif;
+    background: linear-gradient(180deg, #2b0936, #000000); 
     color: #fff;
     margin: 0;
     padding: 0;
@@ -28,14 +29,14 @@ header {
 }
 .navbar {
     display: flex;
-    justify-content:  space-around; /* Alterei para garantir que o logo e os links fiquem bem distribuídos */
+    justify-content:  space-around; 
     align-items: center;
     padding: 1em 3em;
     background-color: var(--cor1);
     position: fixed;
     width: 100%;
     top: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adicionando uma leve sombra para destacar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .logo h1 {
@@ -44,18 +45,15 @@ header {
     font-size: 1.8em;
     font-weight: bold;
     text-decoration: none;
-    z-index: 2; /* Garantir que o logo fique acima dos links */
+    z-index: 2; 
 }
-
-/* Links de navegação */
 .nav-links {
     list-style: none;
     display: flex;
     gap: 1.5em;
     justify-content: center;
-    z-index: 2; /* Garante que os links fiquem visíveis acima de outros elementos */
+    z-index: 2; 
 }
-
 .nav-links a {
     color: var(--cor4);
     text-decoration: none;
@@ -64,9 +62,8 @@ header {
 }
 
 .nav-links a:hover {
-    color: var(--cor3); /* Azul claro */
+    color: var(--cor3); 
 }
-/* Links de navegação */
 .nav-links {
     list-style: none;
     display: flex;
@@ -81,47 +78,17 @@ header {
 }
 
 .nav-links a:hover {
-    color: var(--cor3); /* Azul claro */
+    color: var(--cor3); 
 }
 .navbar img {
-    width: 70px;  /* Ajuste o valor conforme necessário */
-    height: auto;  /* Mantém a proporção original da imagem */
-}
-.search-bar {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
+    width: 70px;  
+    height: auto;  
 }
 
-.search-bar input {
-    padding: 0.5em;
-    border: 2px solid var(--cor5); /* Cor rosa */
-    border-radius: 5px;
-    font-size: 1em;
-    outline: none;
-    width: 200px; /* Largura do campo de texto */
-}
-
-.search-bar button {
-    padding: 0.5em 1em;
-    background-color: var(--cor5); /* Cor rosa vibrante */
-    color: var(--cor4); /* Texto branco */
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.search-bar button:hover {
-    background-color: var(--cor3); /* Azul claro no hover */
-}
-
-/* Destaque no card */
 .show-card.highlight {
-    border-color: var(--cor3); /* Azul claro para o destaque */
-    box-shadow: 0 0 15px rgba(173, 216, 230, 0.8); /* Brilho ao redor */
-    transform: scale(1.1); /* Ampliação leve */
+    border-color: var(--cor3); 
+    box-shadow: 0 0 15px rgba(173, 216, 230, 0.8); 
+    transform: scale(1.1); 
 }
 .container{
     max-width: 1500px;
@@ -138,8 +105,6 @@ header {
         background-position: 0% 0%;
     }
 }
-
-/* Aplicando a animação na seção hero */
 .hero {
     position: relative;
     text-align: center;
@@ -148,19 +113,17 @@ header {
     background-size: cover;
     background-position: 0% 0%;
     background-repeat: no-repeat;
-    animation: moveBackground 20s infinite alternate; /* Duração de 20 segundos */
+    animation: moveBackground 20s infinite alternate; 
     color: var(--cor4);
-    margin-top: 6em; /* Espaçamento entre o topo e a imagem */
-    margin-bottom: 3em; /* Adiciona espaço abaixo da seção hero */
+    margin-top: 6em; 
+    margin-bottom: 3em; 
     border-radius: 20px;
-    margin-left: 2em; /* Ajuste se necessário */
-    margin-right: 2em; /* Ajuste se necessário */
-    border: 5px solid var(--cor5); /* Bordas arredondadas e cor rosa vibrante */
+    margin-left: 2em; 
+    margin-right: 2em; 
+    border: 5px solid var(--cor5); 
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(255, 105, 180, 0.8); /* Sombra rosa brilhante ao redor da seção */
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.8); 
 }
-
-/* Sombreado estilo Netflix */
 .hero::after {
     content: '';
     position: absolute;
@@ -168,16 +131,14 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)); /* Gradiente escuro */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)); 
     z-index: 1;
 }
-
-/* Ajuste do texto na seção hero */
 .hero h1,
 .hero p {
     position: relative;
     z-index: 2;
-    text-shadow: 2px 2px 8px var(--cor5); /* Sombra intensa no texto */
+    text-shadow: 2px 2px 8px var(--cor5); 
 }
 
 .hero h1 {
@@ -201,43 +162,83 @@ header {
     text-align: center;
     background-color: var(--cor1);
     border-radius: 10px;
-    border: 2px solid var(--cor5); /* Borda rosa */
-    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8), 0 0 30px rgba(255, 105, 180, 0.6); /* Brilho nas bordas */
-    transition: transform 0.2s, box-shadow 0.3s; /* Efeito suave */
+    border: 2px solid var(--cor5); 
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8), 0 0 30px rgba(255, 105, 180, 0.6); 
+    transition: transform 0.2s, box-shadow 0.3s;
     overflow: hidden;
+    position: relative;
+    cursor: pointer;
 }
-
 .show-card:hover {
-    transform: scale(1.05); /* Zoom ao passar o mouse */
+    transform: scale(1.05); 
     background-color: var(--cor6);
-    box-shadow: 0 0 25px rgba(255, 105, 180, 1), 0 0 40px rgba(255, 105, 180, 0.7); /* Aumento do brilho no hover */
+    box-shadow: 0 0 25px rgba(255, 105, 180, 1), 0 0 40px rgba(255, 105, 180, 0.7); 
 }
 .show-card img {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4); /* Sombra rosa vibrante */
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4); 
 }
-
 .show-card h2 {
     padding: 0.5em 0;
-    color: var(--cor4); /* Texto branco para contraste com o fundo */
+    color: var(--cor4); 
     font-size: 1em;
 }
+.hover-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 90%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    opacity: 0;
+    pointer-events: none; 
+    border-radius: 10px; 
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.hover-info h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.4em; 
+    font-weight: bold;
+    color: var(--cor5); 
+}
+.hover-info p {
+    font-size: 1em; 
+    color: white;
+    margin: 0.5em 0;
+}
+.show-card:hover .hover-info {
+    opacity: 1; 
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1.05); 
+}
+.show-card:hover .hover-info {
+    opacity: 1; 
+    pointer-events: auto;
+}
 .about {
-    background-color: var(--cor1); /* Fundo roxo escuro */
+    background-color: var(--cor1); 
     color: var(--cor4);
     padding: 2em;
-    margin: 2em 2em 0; /* Espaçamento ao redor */
-    border-radius: 10px; /* Bordas arredondadas */
-    border: 2px solid var(--cor5); /* Borda rosa vibrante */
-    box-shadow: 0 0 20px rgba(255, 105, 180, 0.8); /* Sombra rosa brilhante ao redor da seção */
+    margin: 2em 2em 0; 
+    border-radius: 10px; 
+    border: 2px solid var(--cor5); 
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.8); 
 }
 .about h2 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 1em;
-    text-shadow: 2px 2px 8px var(--cor5); /* Sombra no título */
+    text-shadow: 2px 2px 8px var(--cor5); 
 }
 
 .about p {
@@ -247,7 +248,7 @@ header {
     margin-bottom: 1em;
 }
 footer {
-    background: linear-gradient(180deg, #2b0936, #000000); /* Degradê de roxo escuro para preto */
+    background: linear-gradient(180deg, #2b0936, #000000); 
     color: var(--cor4);
     padding: 2em;
     text-align: center;

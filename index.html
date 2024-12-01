@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vintage Toons</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="menu.js"></script>
 </head>
 <body>
     <header class="navbar">
@@ -15,16 +14,16 @@
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="/pages/anos80.html">Anos 80</a></li>
-                <li><a href="/pages/anos90.html">Anos 90</a></li>
-                <li><a href="/pages/anos2000.html">Anos 2000</a></li>
-                <li><a href="/pages/personagens.html">Personagens</a></li>
-                <li><a href="/pages/autores.html">Autores</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pages/anos80.html">Anos 80</a></li>
+                <li><a href="pages/anos90.html">Anos 90</a></li>
+                <li><a href="pages/anos2000.html">Anos 2000</a></li>
+                <li><a href="pages/personagens.html">Personagens</a></li>
+                <li><a href="pages/autores.html">Autores</a></li>
             </ul>
         </nav>
         <div class="logo">
-            <img src="/imagens/camera de gravacao.png" alt="">
+            <a href="pages/historia.html"><img src="imagens/relorio.png" alt="Relógio"></a>
         </div>
     </header>
 
@@ -35,27 +34,49 @@
         </section>
 
         <section class="shows-gallery">
-            <div class="show-card"> <!-- Exemplo de Card de Desenho -->
+            <!-- Card de Desenho -->
+            <div class="show-card" data-title="Dragon Ball Z" data-description="Uma das séries mais populares, com batalhas épicas e momentos icônicos!" data-image="imagens/dragon-ball-z.png">
                 <img src="imagens/dragon-ball-z.png" alt="Dragon Ball Z">
                 <h2>Dragon Ball Z</h2>
+                <div class="hover-info">
+                    <h3>Dragon Ball Z</h3>
+                    <p>Uma das séries mais populares, com batalhas épicas e momentos icônicos!</p>
+                </div>
             </div>
             <div class="show-card">
                 <img src="imagens/scooby-doo.jpg" alt="Scooby-Doo">
                 <h2>Scooby-Doo</h2>
+                <div class="hover-info">
+                    <h3>Scooby-Doo</h3>
+                    <p>A turma que resolve mistérios com muito humor e sustos!</p>
+                </div>
             </div>
             <div class="show-card">
-                <img src="imagens/picapau.jpeg" alt="pica pau">
+                <img src="imagens/picapau.jpeg" alt="Pica-Pau">
                 <h2>Pica-Pau</h2>
+                <div class="hover-info">
+                    <h3>Pica-Pau</h3>
+                    <p>O famoso pássaro travesso que apronta altas confusões!</p>
+                </div>
             </div>
             <div class="show-card">
-                <img src="imagens/Mickey Mouse.png" alt="mickey mouse">
+                <img src="imagens/Mickey Mouse.png" alt="Mickey Mouse">
                 <h2>Mickey Mouse</h2>
+                <div class="hover-info">
+                    <h3>Mickey Mouse</h3>
+                    <p>O personagem icônico da Disney que encantou gerações.</p>
+                </div>
             </div>
             <div class="show-card">
-                <img src="imagens/cavernaDoDragao.png" alt="caverna do dragao">
-                <h2>Caverna do Dragão </h2>
+                <img src="imagens/cavernaDoDragao.png" alt="Caverna do Dragão">
+                <h2>Caverna do Dragão</h2>
+                <div class="hover-info">
+                    <h3>Caverna do Dragão</h3>
+                    <p>Uma jornada mágica com muita aventura e mistérios.</p>
+                </div>
             </div>
-
+        </div>
+        </section>
         </section>
         <section class="about">
             <div class="sobre">
@@ -83,5 +104,6 @@
             <p>&copy; 2024 Vintage Toons. Todos os direitos reservados.</p>
         </div>
     </footer>
+    
 </body>
 </html>
