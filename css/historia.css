@@ -89,7 +89,7 @@ header {
     background-color: var(--cor4); 
     color: var(--cor6);
     padding: 2em;
-    margin: 4em 2em 2em 2em; 
+    margin: 4em 4em 2em 2em; 
     border-radius: 10px; 
     border: 2px solid var(--cor5); 
     box-shadow: 0 0 20px rgba(255, 105, 180, 0.8); 

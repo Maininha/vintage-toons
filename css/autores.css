@@ -58,18 +58,6 @@ body {
     margin: 0 auto;
     padding: 2em;
 }
-.hero {
-    text-align: center;
-    padding: 2em;
-    background-color: var(--cor2); 
-    border-radius: 10px;
-    border: 2px solid var(--cor5); 
-    margin-bottom: 2em;
-}
-.hero h1 {
-    color: var(--cor5);
-    text-shadow: 2px 2px 8px var(--cor5);
-}
 .topic {
     margin-bottom: 3em;
     border: 2px solid var(--cor5);
@@ -104,7 +92,7 @@ body {
     justify-content: center; 
     gap: 30px;
     margin-bottom: 50px;
-    margin-top: 50px; 
+    margin-top: 120px; 
 }
 #autores .autor {
     background-color: var(--cor2);
